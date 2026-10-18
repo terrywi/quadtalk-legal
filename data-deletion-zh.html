@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuadTalk 数据删除</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <div class="nav"><a href="index.html">← QuadTalk</a><span class="langs"><a href="data-deletion.html">한국어</a> · <a href="data-deletion-en.html">English</a> · <a href="data-deletion-ja.html">日本語</a> · <b>简体中文</b></span></div>
+  <h1>QuadTalk 数据删除请求说明</h1>
+  <p class="meta">应用名称：QuadTalk · 包名：com.terrywi.quadtalk · 开发者：TerryWi · 生效日期：2026年10月18日</p>
+  <p class="note">本文为译本。韩文原文为正式版本，如内容不一致，以韩文原文为准。</p>
+
+  <p>QuadTalk 是一款同时学习韩语、英语、日语和中文的语言学习应用。设置和学习记录原则上只保存在用户的设备上，提供者不运营保存用户数据的自有服务器。用户可通过以下方式自行删除数据或请求删除。</p>
+
+  <h2>1. 在应用内删除（立即生效）</h2>
+  <ul>
+    <li><b>删除全部云端硬盘备份</b> — 护照 &gt; 账号 · 备份 &gt;"解除账号关联并删除备份"：通过 Google Drive API 立即删除用户本人 Google 云端硬盘应用专用文件夹（appDataFolder）中的全部备份，撤销授予应用的云端硬盘权限，并解除账号关联。</li>
+    <li><b>删除一份云端硬盘备份</b> — 护照 &gt; 账号 · 备份 &gt;"从 Drive 恢复"&gt; 删除：只立即删除所选备份。</li>
+    <li><b>退出登录</b> — 护照 &gt; 账号 · 备份 &gt;"退出登录"：立即删除设备上保存的账号关联信息。云端硬盘备份会保留，重新关联后即可恢复。</li>
+    <li><b>卸载应用</b>：卸载后，设备上保存的全部设置和学习记录会一并删除。</li>
+  </ul>
+
+  <h2>2. 通过电子邮件请求删除</h2>
+  <p>由于提供者不运营保存用户数据的服务器，所有需要删除的数据都位于用户的设备和用户本人的 Google 云端硬盘中。如仍需删除方面的帮助，请发送邮件至 <a href="mailto:wwwtaekyu@gmail.com">wwwtaekyu@gmail.com</a>，提供者将及时（7个工作日内）答复。请在邮件标题中注明"数据删除请求"。</p>
+
+  <h2>3. 删除的数据与保留的数据</h2>
+  <table>
+    <tr><th>数据类型</th><th>保存位置</th><th>删除方式／时间</th><th>删除后的保留</th></tr>
+    <tr>
+      <td>设置与学习记录（语言、目标、提醒设置、进度、星星、测试结果、学习日历、复习卡片）</td>
+      <td>用户设备</td>
+      <td>卸载应用时立即删除</td>
+      <td>无（不保存在服务器上，也不包含在 Android 设备备份中）</td>
+    </tr>
+    <tr>
+      <td>Google 云端硬盘备份文件（设置与学习记录的 JSON 副本）</td>
+      <td>用户本人 Google 云端硬盘的 appDataFolder</td>
+      <td>在"从 Drive 恢复"列表中删除（单份）或执行"解除账号关联并删除备份"（全部）时立即删除</td>
+      <td>无（最多保留最近3份，仅在点击"立即备份"时生成）</td>
+    </tr>
+    <tr>
+      <td>Google 账号信息（电子邮件）</td>
+      <td>用户设备</td>
+      <td>执行"退出登录"或"解除账号关联并删除备份"时立即删除</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>广告 ID、IP 地址、设备信息、诊断数据</td>
+      <td>Google AdMob（Google LLC）</td>
+      <td>在设备 设置 &gt; 隐私 &gt; 广告 中重置或删除广告 ID／关闭个性化</td>
+      <td>遵循 Google 的隐私政策和保存期限</td>
+    </tr>
+  </table>
+
+  <p>详情请参阅 <a href="privacy-zh.html">QuadTalk 隐私政策</a>。本说明以韩文为原文，译本与原文内容不一致时，以韩文原文为准。</p>
+
+  <p class="contact">联系方式：wwwtaekyu@gmail.com</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuadTalk Data Deletion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <div class="nav"><a href="index.html">← QuadTalk</a><span class="langs"><a href="data-deletion.html">한국어</a> · <b>English</b> · <a href="data-deletion-ja.html">日本語</a> · <a href="data-deletion-zh.html">简体中文</a></span></div>
+  <h1>QuadTalk Data Deletion Requests</h1>
+  <p class="meta">App: QuadTalk · Package: com.terrywi.quadtalk · Developer: TerryWi · Effective October 18, 2026</p>
+  <p class="note">This is a translation. The Korean original is the official version; if the two differ, the Korean original prevails.</p>
+
+  <p>QuadTalk is a language-learning app for learning Korean, English, Japanese and Chinese together. Settings and learning records are, as a rule, stored only on your device, and the Provider runs no server of its own to keep your data. You can delete your data yourself, or request deletion, as described below.</p>
+
+  <h2>1. Delete in the app (immediate)</h2>
+  <ul>
+    <li><b>Delete all Drive backups</b> — Passport &gt; Account · Backup &gt; "Disconnect account and delete backups": all backup files in the app-only folder (appDataFolder) of your own Google Drive are deleted immediately through the Google Drive API, the Drive permission given to the app is revoked, and the account is disconnected.</li>
+    <li><b>Delete one Drive backup</b> — Passport &gt; Account · Backup &gt; "Restore from Drive" &gt; Delete: only the backup you choose is deleted immediately.</li>
+    <li><b>Sign out</b> — Passport &gt; Account · Backup &gt; "Sign out": the account connection stored on the device is deleted immediately. Drive backups remain, so you can reconnect and restore.</li>
+    <li><b>Uninstall the app</b>: all settings and learning records stored on the device are deleted with it.</li>
+  </ul>
+
+  <h2>2. Request deletion by email</h2>
+  <p>Because the Provider runs no server that keeps your data, everything there is to delete is on your device and in your own Google Drive. If you still need help with deletion, email <a href="mailto:wwwtaekyu@gmail.com">wwwtaekyu@gmail.com</a>; the Provider will respond without delay (within 7 business days). Please put "Data deletion request" in the subject.</p>
+
+  <h2>3. What is deleted and what is kept</h2>
+  <table>
+    <tr><th>Data</th><th>Where it is stored</th><th>How / when it is deleted</th><th>Kept after deletion</th></tr>
+    <tr>
+      <td>Settings and learning records (languages, goal, reminder settings, progress, stars, test results, study calendar, review cards)</td>
+      <td>Your device</td>
+      <td>Immediately when you uninstall the app</td>
+      <td>Nothing (no server copy; also excluded from Android device backup)</td>
+    </tr>
+    <tr>
+      <td>Google Drive backup files (JSON copies of settings and learning records)</td>
+      <td>appDataFolder of your own Google Drive</td>
+      <td>Immediately with Delete in the "Restore from Drive" list (one) or "Disconnect account and delete backups" (all)</td>
+      <td>Nothing (up to the 3 most recent are kept; created only when you tap "Back up now")</td>
+    </tr>
+    <tr>
+      <td>Google account information (email)</td>
+      <td>Your device</td>
+      <td>Immediately with "Sign out" or "Disconnect account and delete backups"</td>
+      <td>Nothing</td>
+    </tr>
+    <tr>
+      <td>Advertising ID, IP address, device information, diagnostic data</td>
+      <td>Google AdMob (Google LLC)</td>
+      <td>Reset or delete the advertising ID / opt out of personalization in device Settings &gt; Privacy &gt; Ads</td>
+      <td>Subject to Google's privacy policy and retention periods</td>
+    </tr>
+  </table>
+
+  <p>See the <a href="privacy-en.html">QuadTalk Privacy Policy</a> for details. The Korean text of this notice is the original; if a translation differs, the Korean original prevails.</p>
+
+  <p class="contact">Contact: wwwtaekyu@gmail.com</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuadTalk データ削除</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <div class="nav"><a href="index.html">← QuadTalk</a><span class="langs"><a href="data-deletion.html">한국어</a> · <a href="data-deletion-en.html">English</a> · <b>日本語</b> · <a href="data-deletion-zh.html">简体中文</a></span></div>
+  <h1>QuadTalk データ削除リクエストのご案内</h1>
+  <p class="meta">アプリ名：QuadTalk · パッケージ名：com.terrywi.quadtalk · 開発者：TerryWi · 施行日 2026年10月18日</p>
+  <p class="note">本書は翻訳版です。韓国語の原文が正本であり、内容が異なる場合は韓国語原文が優先します。</p>
+
+  <p>QuadTalk（クアッドトーク）は、韓国語・英語・日本語・中国語を一緒に学ぶ語学学習アプリです。設定と学習記録は原則として利用者の端末内にのみ保存され、提供者は利用者のデータを保管する独自のサーバーを運営していません。利用者は以下の方法で自分のデータを削除したり、削除をリクエストしたりできます。</p>
+
+  <h2>1. アプリ内で削除（即時）</h2>
+  <ul>
+    <li><b>ドライブのバックアップをすべて削除</b> — パスポート &gt; アカウント · バックアップ &gt;「アカウント連携を解除してバックアップを削除」：利用者本人の Google ドライブのアプリ専用フォルダ（appDataFolder）にあるバックアップがすべて Google Drive API で直ちに削除され、アプリへのドライブ権限が取り消され、連携が解除されます。</li>
+    <li><b>ドライブのバックアップを1件削除</b> — パスポート &gt; アカウント · バックアップ &gt;「Drive から復元」&gt; 削除：選んだバックアップのみ直ちに削除されます。</li>
+    <li><b>ログアウト</b> — パスポート &gt; アカウント · バックアップ &gt;「ログアウト」：端末に保存された連携情報が直ちに削除されます。ドライブのバックアップは残るので、再び連携して復元できます。</li>
+    <li><b>アプリの削除</b>：アプリを削除すると、端末に保存されたすべての設定と学習記録が一緒に削除されます。</li>
+  </ul>
+
+  <h2>2. メールで削除をリクエスト</h2>
+  <p>提供者は利用者のデータを保管するサーバーを運営していないため、削除すべきデータはすべて利用者の端末と本人の Google ドライブにあります。それでも削除についてサポートが必要な場合は <a href="mailto:wwwtaekyu@gmail.com">wwwtaekyu@gmail.com</a> までご連絡ください。遅滞なく（7営業日以内に）ご案内し、結果をお返事します。件名に「データ削除リクエスト」とご記入ください。</p>
+
+  <h2>3. 削除されるデータと保管されるデータ</h2>
+  <table>
+    <tr><th>データの種類</th><th>保存場所</th><th>削除方法・時点</th><th>削除後の保管</th></tr>
+    <tr>
+      <td>設定と学習記録（言語、目標、通知設定、進捗、星、テスト結果、学習カレンダー、復習カード）</td>
+      <td>利用者の端末</td>
+      <td>アプリ削除時に直ちに</td>
+      <td>なし（サーバーに保管せず、Android の端末バックアップからも除外）</td>
+    </tr>
+    <tr>
+      <td>Google ドライブのバックアップ（設定と学習記録の JSON コピー）</td>
+      <td>利用者本人の Google ドライブ appDataFolder</td>
+      <td>「Drive から復元」一覧の削除（1件）または「アカウント連携を解除してバックアップを削除」（すべて）で直ちに</td>
+      <td>なし（最新3件まで保管、「今すぐバックアップ」を押したときのみ作成）</td>
+    </tr>
+    <tr>
+      <td>Google アカウント情報（メールアドレス）</td>
+      <td>利用者の端末</td>
+      <td>「ログアウト」または「アカウント連携を解除してバックアップを削除」で直ちに</td>
+      <td>なし</td>
+    </tr>
+    <tr>
+      <td>広告 ID・IP アドレス・端末情報・診断データ</td>
+      <td>Google AdMob（Google LLC）</td>
+      <td>端末の設定 &gt; プライバシー &gt; 広告で広告 ID をリセット・削除 / カスタマイズをオフ</td>
+      <td>Google のプライバシーポリシーと保有期間に従う</td>
+    </tr>
+  </table>
+
+  <p>詳しくは <a href="privacy-ja.html">QuadTalk プライバシーポリシー</a> をご覧ください。本案内は韓国語を原文とし、翻訳版と内容が異なる場合は韓国語原文が優先します。</p>
+
+  <p class="contact">お問い合わせ：wwwtaekyu@gmail.com</p>
+</div>
+</body>
+</html>
