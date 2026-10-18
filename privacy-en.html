@@ -28,7 +28,7 @@
   <p><b>Items collected</b></p>
   <ul>
     <li><b>[Optional, when you connect an account] Google account information</b>: email address (or display name). After you connect your Google account (OAuth), it is obtained from Google Drive and used only to show the connected account on screen; it is stored only on your device. All learning features work without connecting an account; it is needed only for Google Drive backup and restore.</li>
-    <li><b>[Created while you use the app, stored locally] Settings and learning records</b>: app settings such as base language, daily goal, pronunciation hint level and reminder settings, and progress such as completed units, stars, test results, streak, study calendar, review cards and number of words learned. This stays in your device's storage and is not sent to the Provider (the Provider runs no server of its own).</li>
+    <li><b>[Created while you use the app, stored locally] Settings and learning records</b>: app settings such as base language, birth year, daily goal, pronunciation hint level and reminder settings, and progress such as completed units, stars, test results, streak, study calendar, review cards and number of words learned. This stays in your device's storage and is not sent to the Provider (the Provider runs no server of its own).</li>
     <li><b>[When you use backup] Google Drive backup data</b>: each time you tap "Back up now", the settings and learning records above are saved as JSON in the app-only space (appDataFolder) of your own Google Drive. The app never backs up automatically. This area is private — even you cannot open it in the Google Drive screens — and no third party, including the Provider, can access it. The Service does not look at your other Drive files.</li>
     <li><b>[Collected automatically by the ad SDK] Advertising ID and device information</b>: the Service shows banner ads through Google AdMob, during which Google may collect the advertising ID, IP address (to estimate approximate location), device information and diagnostic data about ad impressions and clicks. The Provider does not collect or keep this itself; it is handled under Google's privacy policy.</li>
   </ul>
@@ -58,7 +58,16 @@
     <li><b>Turn off reminders / revoke permission</b>: turn them off in Passport &gt; Notifications or revoke the notification permission in system settings (only reminders stop; learning features keep working)</li>
     <li><b>Uninstall the app</b>: all settings and learning records stored on the device are deleted with it</li>
   </ul>
-  <p>For any other privacy questions, contact wwwtaekyu@gmail.com; the Provider will act without delay. The Service is not directed at children under 14, and does not knowingly collect children's personal information.</p>
+  <p>For any other privacy questions, contact wwwtaekyu@gmail.com; the Provider will act without delay.</p>
+
+  <h2>Article 5-2 (Children's privacy)</h2>
+  <p>The Service can be used by people of all ages, including elementary school children. On first launch it asks for the year of birth, and for users who are, or may be, under 14 (judged from the birth year alone, so it includes some 14-year-olds; the same applies before a birth year is chosen; "child users"), the Service works as follows:</p>
+  <ul>
+    <li><b>Account connection and Drive backup are not offered.</b> The Provider therefore does not process child users' email or other account information, and does not collect personal information that requires parental consent.</li>
+    <li><b>Ads are requested as child-directed.</b> Requests to Google AdMob are tagged as child-directed and under the age of consent, and only ads rated G (general audiences) are accepted. Personalized ads are not shown, and Google limits the use of the advertising ID and similar information under its own policies for child-directed requests.</li>
+    <li><b>The birth year</b> is stored only on the device and is never sent anywhere.</li>
+  </ul>
+  <p>Parents or legal guardians may contact us by email about a child user's personal information. Note that the Provider keeps no separate copy of child users' data; uninstalling the app removes everything on the device.</p>
 
   <h2>Article 6 (Security measures)</h2>
   <ul>
@@ -87,7 +96,7 @@
   <p>The Service does not request access to the microphone, SMS, contacts, call logs, location, photos or files.</p>
 
   <h2>Article 9 (Advertising)</h2>
-  <p>The Service shows banner ads through Google AdMob. Information such as the advertising ID may be collected for ad personalization; you can opt out of ad personalization or reset or delete your advertising ID in your device settings (Settings &gt; Privacy &gt; Ads). In regions where separate consent is required, such as the EEA, the UK and Switzerland, a consent flow is shown through Google's User Messaging Platform (UMP), and the ad SDK is not initialized before consent.</p>
+  <p>The Service shows banner ads through Google AdMob. Information such as the advertising ID may be collected for ad personalization; you can opt out of ad personalization or reset or delete your advertising ID in your device settings (Settings &gt; Privacy &gt; Ads). As a family app, it requests only ads rated PG or lower for users 14 and over as well; child users are covered by Article 5-2. In regions where separate consent is required, such as the EEA, the UK and Switzerland, a consent flow is shown through Google's User Messaging Platform (UMP), and the ad SDK is not initialized before consent.</p>
 
   <h2>Article 10 (Privacy officer)</h2>
   <ul>
